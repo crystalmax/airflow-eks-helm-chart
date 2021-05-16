@@ -39,6 +39,7 @@ data:
     load_examples = False
     colored_console_log = False
     executor = {{ .Values.executor }}
+    fernet = {{ .Values.fernetKey }}
 {{- if .Values.elasticsearch.enabled }}
     remote_logging = True
 {{- end }}
@@ -127,7 +128,7 @@ data:
 
     [kubernetes_secrets]
     AIRFLOW__CORE__SQL_ALCHEMY_CONN = {{ printf "%s=connection" (include "airflow_metadata_secret" .) }}
-    AIRFLOW__CORE__FERNET_KEY = {{ printf "%s=fernet-key" (include "fernet_key_secret" .) }}
+    #AIRFLOW__CORE__FERNET_KEY = {{ printf "%s=fernet-key" (include "fernet_key_secret" .) }}
 {{- if .Values.elasticsearch.enabled }}
     AIRFLOW__ELASTICSEARCH__ELASTICSEARCH_HOST = {{ printf "%s=connection" (include "elasticsearch_secret" .) }}
 {{- end }}
