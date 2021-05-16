@@ -39,7 +39,7 @@ data:
     load_examples = False
     colored_console_log = False
     executor = {{ .Values.executor }}
-    fernet = {{ .Values.fernetKey }}
+    fernet_key = {{ .Values.fernetKey }}
 {{- if .Values.elasticsearch.enabled }}
     remote_logging = True
 {{- end }}
