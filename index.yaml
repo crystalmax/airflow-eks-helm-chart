@@ -2,7 +2,23 @@ apiVersion: v1
 entries:
   airflow:
   - apiVersion: v1
-    created: "2021-05-17T14:19:51.634694-04:00"
+    created: "2021-05-17T14:26:16.987092-04:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: '@stable'
+      version: 6.3.12
+    description: Helm chart to deploy Apache Airflow
+    digest: 1e4efd9f8034ea808f4d3bee54e1046b528b9907f7e0166c7e7fcb423c690c69
+    icon: https://www.astronomer.io/static/airflowNewA.png
+    keywords:
+    - airflow
+    name: airflow
+    urls:
+    - https://edwinguo.github.io/airflow-eks-helm-chart/airflow-1.0.5.tgz
+    version: 1.0.5
+  - apiVersion: v1
+    created: "2021-05-17T14:26:16.983058-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -18,7 +34,7 @@ entries:
     - https://edwinguo.github.io/airflow-eks-helm-chart/airflow-1.0.4.tgz
     version: 1.0.4
   - apiVersion: v1
-    created: "2021-05-17T14:19:51.629413-04:00"
+    created: "2021-05-17T14:26:16.976785-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -34,7 +50,7 @@ entries:
     - https://edwinguo.github.io/airflow-eks-helm-chart/airflow-1.0.3.tgz
     version: 1.0.3
   - apiVersion: v1
-    created: "2021-05-17T14:19:51.62482-04:00"
+    created: "2021-05-17T14:26:16.97218-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -50,7 +66,7 @@ entries:
     - https://edwinguo.github.io/airflow-eks-helm-chart/airflow-1.0.2.tgz
     version: 1.0.2
   - apiVersion: v1
-    created: "2021-05-17T14:19:51.619646-04:00"
+    created: "2021-05-17T14:26:16.967009-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -66,7 +82,7 @@ entries:
     - https://edwinguo.github.io/airflow-eks-helm-chart/airflow-1.0.1.tgz
     version: 1.0.1
   - apiVersion: v1
-    created: "2021-05-17T14:19:51.613445-04:00"
+    created: "2021-05-17T14:26:16.960414-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -82,7 +98,7 @@ entries:
     - https://edwinguo.github.io/airflow-eks-helm-chart/airflow-1.0.0.tgz
     version: 1.0.0
   - apiVersion: v1
-    created: "2021-05-17T14:19:51.640893-04:00"
+    created: "2021-05-17T14:26:16.991611-04:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -97,4 +113,4 @@ entries:
     urls:
     - https://edwinguo.github.io/airflow-eks-helm-chart/docs/airflow-1.0.0.tgz
     version: 1.0.0
-generated: "2021-05-17T14:19:51.607912-04:00"
+generated: "2021-05-17T14:26:16.954803-04:00"
