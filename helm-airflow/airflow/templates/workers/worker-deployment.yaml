@@ -35,7 +35,7 @@ metadata:
 {{- end }}
 spec:
 {{- if $persistence }}
-  serviceName: app 
+  serviceName: {{ .Release.Name }}-worker 
 {{- end }}
   replicas: {{ .Values.workers.replicas }}
   selector:
@@ -72,7 +72,7 @@ spec:
 {{ toYaml .Values.tolerations | indent 8 }}
       terminationGracePeriodSeconds: {{ .Values.workers.terminationGracePeriodSeconds }}
       restartPolicy: Always
-      serviceAccountName: {{ .Release.Name }}-worker-serviceaccount
+      serviceAccountName: app
       securityContext:
         runAsUser: {{ .Values.uid }}
         fsGroup: {{ .Values.gid }}
