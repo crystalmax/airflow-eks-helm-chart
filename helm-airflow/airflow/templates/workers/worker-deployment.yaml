@@ -35,7 +35,7 @@ metadata:
 {{- end }}
 spec:
 {{- if $persistence }}
-  serviceName: {{ .Release.Name }}-worker
+  serviceName: app 
 {{- end }}
   replicas: {{ .Values.workers.replicas }}
   selector:
