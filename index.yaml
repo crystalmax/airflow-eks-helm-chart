@@ -15,7 +15,7 @@ entries:
     - airflow
     name: airflow
     urls:
-    - https://edwinguo.github.io/airflow-eks-helm-chart/airflow-1.0.8.tgz
+    - https://crystalmax.github.io/airflow-eks-helm-chart/airflow-1.0.8.tgz
     version: 1.0.8
   - apiVersion: v1
     created: "2021-05-17T19:26:22.432883-04:00"
